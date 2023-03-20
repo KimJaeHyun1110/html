@@ -9,6 +9,11 @@
 <body>
     <h1>2줄 3칸 기본 표 만들기</h1>
     <table border="1" width="50%">
+        <caption>
+            <strong>기본 테이블 입니다.</strong>
+            <br>
+            2줄 3칸짜리 표 입니다.
+        </caption>
         <!--1번줄-->
         <tr>
             <td>1</td>
@@ -27,6 +32,11 @@
     <hr>
 
     <h1>표에 제목 셀 만들기</h1>
+    <figure>
+        <figcaption>
+            표에 제목 셀 만들기 입니다.
+        </figcaption>
+    </figure>
     <table border="1" width="100%">
         <!--1번줄-->
         <tr>
@@ -66,6 +76,79 @@
         </tr>
     </table>
 
+    <hr>
+    <h1>대학시간표</h1>
+    <!--<thead><tbody><tfoot>-->
+    <table border="1" width="100%">
+        <thead>
+            <tr>
+                <th>구분</th>
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+                <th>목</th>
+                <th>금</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1교시</th>
+                <td></td>
+                <td rowspan="2">SW프로그래밍사고</td>
+                <td rowspan="2">SW프로그래밍사고</td>
+                <td rowspan="2">공학적글쓰기</td>
+                <td rowspan="2"></td>
+            </tr>
+            <tr>
+                <th>2교시</th>
+                <td rowspan="2">컴퓨터공학개론</td>
+            </tr>
+            <tr>
+                <th>3교시</th>
+                <td rowspan="2">한국의문화유산</td>
+                <td></td>
+                <td rowspan="3"></td>
+                <td rowspan="2">SJP I</td>
+            </tr>
+            <tr>
+                <th>4교시</th>
+                <td></td>
+                <td>컴퓨터공학개론</td>
+            </tr>
+            <tr><th>5교시</th>
+                <td rowspan="2">웹제작</td>
+                <td rowspan="2">글로벌직업탐구</td>
+                <td rowspan="2"></td>
+                <td rowspan="2"></td>
+            </tr>
+            <tr>
+                <th>6교시</th>
+                <td>대학생활과 진로탐색I</td>
+            </tr>
+            <tr>
+                <th>7교시</th>
+                <td rowspan="3" colspan="2"></td>
+                <td rowspan="2">SJP I</td>
+                <td rowspan="3"></td>
+                <td rowspan="2">웹제작</td>
+            </tr>
+            <tr>
+                <th>8교시</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th>9교시</th>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="6">각 교시는 매시간 30분에 시작하여 다음시간 20분에 종료됨</th>
+            </tr>
+        </tfoot>
+        
+    </table>
 
 </body>
 </html>
