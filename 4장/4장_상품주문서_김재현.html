@@ -58,10 +58,10 @@
                     <legend>개인 정보</legend>
                     <ul>
                         <li>
-                            <label class="title">이름</label><input type="text" placeholder="여백없이 입력" required> 
+                            <label for="name" class="title" >이름</label><input type="text" name="name" id="name" placeholder="여백없이 입력" required> 
                         </li>
                         <li>
-                            <label class="title">연락처</label><input type="tel" placeholder="연락가능한 번호" required> 
+                            <label for="phone" class="title" >연락처</label><input type="tel" name="phone" id="phone" placeholder="연락가능한 번호" required> 
                         </li>
                     </ul>
                 </fieldset>
@@ -70,13 +70,13 @@
                     <legend>배송지 정보</legend>
                     <ul>
                         <li>
-                            <label class="title">주소</label><input type="test" size="40">
+                            <label for="address" class="title">주소</label><input type="test" size="40" name="address" id="address">
                         </li>
                         <li>
-                            <label class="title">전화번호</label><input type="test">
+                            <label for="addphone" class="title">전화번호</label><input type="test" name="addphone" id="addphone">
                         </li>
                         <li>
-                            <label class="title">메모</label><textarea cols="40" rows="3" id="memo"></textarea>
+                            <label for="memo" class="title">메모</label><textarea name="memo" cols="40" rows="3"  id="memo"></textarea>
                         </li>
                     </ul>
                 </fieldset>
@@ -85,20 +85,16 @@
                     <legend>주문 정보</legend>
                     <ul>
                         <li>
-                            <label><input type="checkbox">과테말라 안티구아 (100g) <input type="number" min="1" max="100">개</label>
+                            <label><input type="checkbox" value="gwa">과테말라 안티구아 (100g) <input type="number" name="gwa" value="1" min="1" max="100">개</label>
                         </li>
                         <li>
-                            <label><input type="checkbox">인도네시아 만델링 (100g) <input type="number" min="1" max="100">개</label>
+                            <label><input type="checkbox" value="ind">인도네시아 만델링 (100g) <input type="number" name="ind" value="1" min="1" max="100">개</label>
                         </li>
                         <li>
-                            <label><input type="checkbox">탐라는도다(블렌딩) (100g) <input type="number" min="1" max="100">개</label>
+                            <label><input type="checkbox" value="jeju">탐라는도다(블렌딩) (100g) <input type="number" name="jeju" value="1" min="1" max="100">개</label>
                         </li>
                     </ul>
                 </fieldset>
-				
-
-				
-
 				
 				
                 <!-- 버튼 구역-->
