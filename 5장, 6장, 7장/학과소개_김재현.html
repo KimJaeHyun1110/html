@@ -8,8 +8,17 @@
 
     <style>
         /*전체 콘텐츠를 감싸는 div*/
+        body{
+            /*background-color: rgb(189, 32, 32);*/
+            background-image: url(images/computer-4484282_1920.jpg);/*배경이미지*/
+            background-repeat: no-repeat;/*이미지를 반복하지 않음*/
+            background-attachment: fixed;/*화면 스크롤상관없이 배경이미지고정*/
+            background-position: center;/*사진중앙*/
+            background-size: cover;/*화면에 맞춤*/
+        }
+
         #container{
-            background-color: skyblue;
+            /*background-color: rgba(1, 143, 60, 0.29);*/
             width: 1000px; /* 너비*/
             margin: 0 auto; /* 가로로 가운데 배치*/
             padding: 10px; /*테두리와 내용 사이에 안쪽 여백*/
@@ -19,7 +28,7 @@
         #main{
             width: 1000px;
             border: 1px solid #ccc;
-
+            background-color: rgba(224, 224, 224, 0.6);
         }
 
         img{
@@ -51,6 +60,31 @@
             text-align:justify;
             padding: 20px;
         }
+
+        ul{
+            font-size: 1.2em;
+            color: orange;/*색 주황색*/
+            line-height: 2em;
+            font-weight: bold;/*글자 굵게하기*/
+            list-style-type: none;/*ul 앞에 점 때기*/
+        }
+
+        ol{
+            font-size: 0.8em;
+            color: #3d3c3c;
+            font-weight: normal;/*글자 굵기 돌리기*/
+            background-color: #ff6ca49c;
+        }
+
+        .mini_text{
+            font-size: 0.8em;
+            font-weight: normal;
+            padding: 20px;
+        }
+
+        .red_point{
+            color: red;
+        }
     </style>
 </head>
 <body>
@@ -78,16 +112,16 @@
             <h2>컴퓨터공학 전공</h2>
             <p>
                 컴퓨터공학의 전반적인 교과목을 학습하여 다양한 IT분야로 진출할 수 있는 기본 역량을 배양하고, <br>
-                사물인터넷, 클라우드시스템, 빅데이터처리, 인공지능 등 고급 IT기술에 대한 심화 학습을 통해 <br>
+                <span class="red_point">사물인터넷, 클라우드시스템, 빅데이터처리, 인공지능</span> 등 고급 IT기술에 대한 심화 학습을 통해 <br>
                 취업 역량을 강화하여 현장 밀착형 IT 전문가를 양성하는 전공 <br>
             </p>
             <hr>
 
             <h2>메타버스 전공</h2>
             <p>
-                컴퓨터공학의 전반적인 교과목을 학습하여 다양한 IT분야로 진출할 수 있는 기본 역량을 배양하고, <br>
-                사물인터넷, 클라우드시스템, 빅데이터처리, 인공지능 등 고급 IT기술에 대한 심화 학습을 통해 <br>
-                취업 역량을 강화하여 현장 밀착형 IT 전문가를 양성하는 전공 <br>
+                프로그램 코딩 주제의 기초 교육과정과 메타버스 콘텐츠 제작 주제의 심화 교육과정을 통해 <br>
+                <span class="red_point">메타버스</span> 및 <span class="red_point">게임</span> 등 관련 분야에서 필요로 하는 코딩 역량과 콘텐츠 제작 역량을 <br>
+                겸비한 창의적인 인력을 양성하는 전공 <br>
             </p>
             <hr>
 
@@ -107,7 +141,7 @@
             <hr>
 
             <!--주소영역-->
-            <p>
+            <p class="mini_text">
                 (우) 46958 부산광역시 사상구 괘법동 신라대학교 국제교육관 440-1호<br>
                 TEL : 051-999-5653,5497 FAX : 051-999-5160
             </p>
