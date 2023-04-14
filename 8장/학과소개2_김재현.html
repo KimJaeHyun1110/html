@@ -6,6 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css " href="layout.css">
     <title>컴퓨터공학부 - 김재현</title>
+    <style>
+        article{
+            width: 95%;
+            margin-left: auto;
+            margin-right: auto;/*바깥에 틈을 만들어 가운데정렬*/
+            padding: 20px; /*안쪽 여백 전 방향으로 20px주기*/
+            margin: 20px,0px,20px,0px;/*상 우 하 좌에 px단위로 바깥 틈 지정*/
+        }
+
+        #com1{
+            border: 5px solid black;/*5px 두께, 실선, 검정색 테두리 만들기*/
+            border-radius: 10px;/*지름10px짜리 원만큼 테두리 둥글게*/
+        }
+
+        #com2{
+            border: 5px dotted green;/*5px 두께, 점선, 초록색 테두리 만들기*/
+            border-radius: 10px;/*지름10px짜리 원만큼 테두리 둥글게*/
+        }
+
+        #com3{
+            border: 5px double skyblue;/*5px 두께, 이중선, 초록색 테두리 만들기*/
+            border-top-left-radius: 30px;/*위쪽 왼 모서리를 지름30px짜리 원만큼 테두리 둥글게*/
+            border-bottom-right-radius: 30px;/*아랫쪽 오른 모서리를 지름30px짜리 원만큼 테두리 둥글게*/
+        }
+
+        ol{
+            line-height: 30px;/*줄간격 30px*/
+        }
+
+        h2{
+            font-size: 1.8em;/*글자크기 1.8em*/
+            padding: 15px;/*안쪽여백 15px*/
+            border-radius: 3px;
+            box-shadow: -3px 3px 3px 0px gray;/*왼쪽으로 3px 아랫쪽으로 3px위치에서 시작해서 3px만큼 번지고 0px 만큼 흐리게 영역 그림자 주기*/
+        }
+
+        h3{
+            font-size: 1.3em;/*글자크기 1.8em*/
+            padding: 15px 0px 15px 10px;/*위 15px 오른쪽 0px 아래 15px 왼쪽 10px로 안쪽 여백주기*/
+            box-shadow: -5px 0px 0px 0px rgb(255, 23, 96);/*왼쪽으로 3px 아랫쪽으로 3px위치에서 시작해서 3px만큼 번지고 0px 만큼 흐리게 영역 그림자 주기*/
+            /*border-left: 5px solid purple; 위내용과 동일*/
+        }
+
+        dl{
+            line-height: 30px;/*줄간격 30px*/
+            padding-left: 30px;/*왼쪽 안쪽 여백 30px*/
+            margin-right: 30px;/*오른쪽 바깥 여백 30px*/
+        }
+        dt{
+            font-size: 1.1em;
+            font-weight: bold;
+            color: orange;
+        }
+
+    </style>
 </head>
 <body>
     <!--로고, 메뉴 영역-->
@@ -13,18 +68,18 @@
         <h1>컴퓨터공학부</h1>
         <!-- 메뉴 -->
         <nav>
-            <ul>
-                <li><a href="">학과소개</a></li>
-                <li><a href="">컴퓨터공학전공</a></li>
-                <li><a href="">메타버스전공</a></li>
-                <li><a href="">교육 목표</a></li>
+            <ul><!--href에 주소로 #(id)를 하면 그 영역으로 화면이 이동된다.-->
+                <li><a href="#com1">학과소개</a></li>
+                <li><a href="#com2">컴퓨터공학전공</a></li>
+                <li><a href="#com3">메타버스전공</a></li>
+                <li><a href="#com4">교육 목표</a></li>
             </ul>
         </nav>
     </header>
     <!--학부 소개 메인 영역-->
     <section>
         <!--학부 소개 콘텐츠 내용 영역-->
-        <article>
+        <article id="com1">
             <h2>학부소개</h2>
             <p>
                 본 학부는 소프트웨어 개발 인재 양성을 목표로 1988년 전자계산학과로 출발하여 
@@ -38,7 +93,7 @@
         </article>
         
         <!--컴퓨터공학전공 소개 콘텐츠 내용 영역-->
-        <article>
+        <article id="com2">
             <h2>컴퓨터공학전공</h2>
             <h3>소개</h3>
             <p>
@@ -56,7 +111,7 @@
         </article>
         
         <!--메타버스전공 소개 콘텐츠 내용 영역-->
-        <article>
+        <article id="com3">
             <h2>메타버스전공</h2>
             <h3>소개</h3>
             <p>
@@ -74,7 +129,7 @@
         </article>
         
         <!--교육 목표 콘텐츠 내용 영역-->
-        <article>
+        <article id="com4">
             <h2>교육목표</h2>
             <p>
                 <ul>
