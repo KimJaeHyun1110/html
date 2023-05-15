@@ -1,0 +1,82 @@
+body{
+    font-family: "맑은 고딕", "고딕", "굴림";
+}
+
+header{
+    width: 80%;
+    background-color: aquamarine;
+    margin: 0 auto; /*속성이 4개가 아니라 2개면 앞이 상하 뒤가 좌우 이기에 margin-left: auto; margin-right: auto; 대신 사용가능*/
+    padding: 10px;
+    height: 80px;
+}
+
+header h1{
+    float: left;
+    color: white;
+    padding-left: 20px;
+}
+
+header nav{
+    float:  right;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    margin: 15px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;/*글자 볼드로 표기하기*/
+}
+
+article{
+    clear: both;
+    width: 80%;
+    margin: 0 auto; /*속성이 4개가 아니라 2개면 앞이 상하 뒤가 좌우 이기에 margin-left: auto; margin-right: auto; 대신 사용가능*/
+    border: 5px solid gray;
+    padding: 5px;
+}
+
+section{
+    column-count: 3;/*3단으로 단 나누기*/
+    column-rule: 1px dotted gray;/*단사이 구분선 border랑 비슷*/
+    padding: 10px;
+}
+
+section h3{
+    break-before: column;/*위 컴포넌트 기준으로 단 구분하기*/
+    padding-left: 15px;
+}
+
+section dt{
+    padding-left: 20px;
+}
+
+section dd,section dt{
+    line-height: 30px;/*줄간격 30px*/
+}
+
+aside{
+    clear: both;
+    width: 80%;
+    background-color: limegreen;
+    margin: 0 auto; /*속성이 4개가 아니라 2개면 앞이 상하 뒤가 좌우 이기에 margin-left: auto; margin-right: auto; 대신 사용가능*/
+    
+    padding: 10px;
+}
+
+footer{
+    clear: both;
+    width: 80%;
+    background-color: gray;
+    margin: 0 auto; /*속성이 4개가 아니라 2개면 앞이 상하 뒤가 좌우 이기에 margin-left: auto; margin-right: auto; 대신 사용가능*/
+    text-align: center;
+    color: white;
+    padding: 30px 10px;/*속성이 4개가 아니라 2개일때는 앞에가 위아래 뒤가 좌우 이다*/
+}
