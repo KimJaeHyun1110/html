@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성선택자 2-김재현</title>
+    <style>
+        ul{
+            list-style: none;
+        }
+        li{
+            display: inline;
+            width: 120px;
+            margin: 10px;
+        }
+        li > a{
+            text-decoration: none;
+            color: black;
+            font-size: 14px;
+            padding: 5px 20px;
+        }
+        a[href]{/*태그 속성에 대해 지정 가능 책 429페이지*/
+            background-color: yellow;
+        }
+        a[target="_blank"]{
+            background: url("images/newwindow.png") no-repeat right center;
+            padding-right: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML5 표준안 사이트</h1>
+    <ul>
+        <li><a href="http://www.w3c.org/TR/html" target="_blank">HTML</a></li>
+        <li><a href="https://www.w3c.org/TR/selectors" target="_blank">CSS Selector</a></li>
+        <li><a href="https://www.w3c.org/TR/css3-mediaqueries" target="_blank">미디어</a></li>
+    </ul>
+</body>
+</html>
