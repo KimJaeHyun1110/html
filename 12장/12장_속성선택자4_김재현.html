@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성선택자 4-김재현</title>
+    <style>
+        ul{
+            list-style: none;
+        }
+        li{
+            display: inline;
+            width: 120px;
+            margin: 10px;
+        }
+        li > a{
+            text-decoration: none;
+            color: black;
+            font-size: 14px;
+            padding: 5px 20px;
+        }
+        a[title|="us"]{
+            background: url("images/us.png") no-repeat left center;
+            padding: 5px 25px;
+        }
+        a[title|="jap"]{/*~=이랑은 다르게 완전 일피할필요가 없어 특정값이 포함되어있으면된다 특정값 구분기준은 -이다 예시로 |="abc"라면 "abcd"는 적용받지 않으나 "abc"나 "abc-def"는 적용된다*/
+            background: url("images/jp.png") no-repeat left center;
+            padding: 5px 25px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a>외국어 서비스 : </a></li>
+        <li><a href="#" title="us">영어</a></li>
+        <li><a href="#" title="us-english">영어</a></li>
+        <li><a href="#" title="jap-anese">일본어</a></li>
+    </ul>
+</body>
+</html>

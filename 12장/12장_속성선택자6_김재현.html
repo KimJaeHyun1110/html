@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성선택자 6-김재현</title>
+    <style>
+        ul{
+            list-style: none;
+        }
+        li{
+            display: inline;
+            width: 120px;
+            margin: 10px;
+        }
+        li > a{
+            text-decoration: none;
+            color: black;
+            font-size: 14px;
+            padding: 5px 20px;
+        }
+        a[href$="hwp"]{
+            background: url("images/hwp_icon.gif") no-repeat right center;
+            padding: 5px 25px;
+        }
+        a[href$="xlsx"]{/*^=이랑은 다르게 특정값이 마지막에 포함만 되어있으면된다 $="abc"라면 "abcdef" "abc-def"둘은  적용되지 아니하며 "defabc" "abc" 만 적용된다.*/
+            background: url("images/excel_icon.gif") no-repeat right center;
+            padding: 5px 25px;
+        }
+    </style>
+</head>
+<body>
+    <h2>학과 소개 파일 다운 받기</h2>
+    <ul>
+        <li><a href="intro.hwp">한글파일</a></li>
+        <li><a href="intro.xlsx">엑셀파일</a></li>
+    </ul>
+</body>
+</html>

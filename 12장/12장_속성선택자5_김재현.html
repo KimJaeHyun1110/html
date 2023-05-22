@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성선택자 5-김재현</title>
+    <style>
+        ul{
+            list-style: none;
+        }
+        li{
+            display: inline;
+            width: 120px;
+            margin: 10px;
+        }
+        li > a{
+            text-decoration: none;
+            color: black;
+            font-size: 14px;
+            padding: 5px 20px;
+        }
+        a[title^="us"]{
+            background: url("images/us.png") no-repeat left center;
+            padding: 5px 25px;
+        }
+        a[title^="chi"]{
+            background: url("images/ch.png") no-repeat left center;
+            padding: 5px 25px;
+        }
+        a[title^="jap"]{/*|=이랑은 다르게 특정값이 포함만 되어있으면된다 ^="abc"라면 "abcdef" "abc" "abc-def" 모두 적용된다.*/
+            background: url("images/jp.png") no-repeat left center;
+            padding: 5px 25px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a>외국어 서비스 : </a></li>
+        <li><a href="#" title="us">영어</a></li>
+        <li><a href="#" title="chinese">중국어</a></li>
+        <li><a href="#" title="japanese">일본어</a></li>
+    </ul>
+</body>
+</html>
